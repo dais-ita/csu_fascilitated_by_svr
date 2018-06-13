@@ -1,0 +1,37 @@
+there is a traffic camera named 'tfl Camera 02151' that
+  has '0.00524' as longitude and 
+  has '51.5421' as latitude and
+  has '/Place/JamCams_00001.02151' as url and
+  has 'JamCams_00001.02151' as id and
+  has 'Romford Rd / Tennyson Rd' as common name and
+  has 'https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02151.jpg' as image url and
+  has 'https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02151.mp4' as video url and
+  can show the location 'Tennyson Road' and
+  can show the location 'Romford Road'.
+
+{"service":{
+    "service_name":"tfl camera 02151",
+    "service_uri":"FLASK SERVICE URI",
+    "service_inputs":[],
+    "service_outputs":[ 
+                {"output_name":"traffic_camera_image",
+                "output_data_type":"char64jpg",
+                "output_related_concepts":[
+                    {"concept_name":"road"}
+                ],
+                "output_related_instances":[
+                    {"instance_name":,
+                    "instance_concepts":["road"],
+                    "instance_location":{
+                        "location_name":"Tennyson Road",
+                        "location_lat":0.0064386,
+                        "location_long":51.541137
+                        }
+                    }
+                ]},
+            ],
+
+    "service_average_response_time_ms":1000
+}
+
+}

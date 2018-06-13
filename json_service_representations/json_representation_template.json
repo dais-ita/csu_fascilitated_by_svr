@@ -1,0 +1,46 @@
+{"service":{
+    "service_name":"service one",
+    "service_uri":"https:192.168.1.255:5000",
+    "service_inputs":[ 
+                {"input_name":"input 1",
+                "input_data_type":"string",
+                "required":true,
+                "input_related_concepts":[
+                    {"concept_name":"concept 1"}
+                ],
+                "input_related_instances":[
+                    {"instance_name":"instance 1",
+                    "instance_location":{
+                        "location_name":"location 1",
+                        "location_lat":100,
+                        "location_long":200
+                        }
+                    }
+                ]},
+                
+                {"input_name":"input 2",
+                "input_data_type":"int",
+                "required":false,
+                "input_related_concepts":[
+                    {"concept_name":"concept 1"}
+                ],
+                "input_related_instances":[
+                    {"instance_name":"instance 2",
+                    "instance_location":{
+                        "location_name":"location 2",
+                        "location_lat":300,
+                        "location_long":200
+                        }
+                    }
+                ]},
+            ],
+    "service_outputs":[ 
+                {"output_name":"output 1",
+                "output_data_type":"float"},
+                {"output_name":"output 2",
+                "output_data_type":"bool"},],
+
+    "service_average_response_time_ms":200
+}
+
+}
