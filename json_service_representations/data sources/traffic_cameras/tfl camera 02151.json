@@ -22,8 +22,8 @@
 //   is located in the region 'Test Region'.
 
 {"service":{
-    "service_name":"tfl camera 02151", //this is just the name of one instantitation (there could/would be similar clones of this but with different names)
-    "service_uri":"localhost:5001", //instance specific URI 
+    "service_name":"tfl camera 02151",
+    "service_uri":"localhost:5001",
     "service_inputs":[],
     "service_outputs":[ 
                 {"output_name":"traffic_camera_image",
