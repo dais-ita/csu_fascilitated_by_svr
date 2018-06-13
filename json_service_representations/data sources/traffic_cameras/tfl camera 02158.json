@@ -1,0 +1,54 @@
+// there is a traffic camera named 'tfl Camera 02158' that
+//   has '0.04485' as longitude and 
+//   has '51.5497' as latitude and
+//   has '/Place/JamCams_00001.02158' as url and
+//   has 'JamCams_00001.02158' as id and
+//   has 'Romford Rd / Carlton Rd' as common name and
+//   has 'https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02158.jpg' as image url and
+//   has 'https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02158.mp4' as video url.
+//  can show the location 'Carlton Road' and
+//  can show the location 'Romford Road'.
+
+
+// there is a road named 'Romford Road' that
+//   has '0.0529565' as longitude and 
+//   has '51.5525474' as latitude and
+//   has 'Romford Road' as road name and
+//   is located in the region 'Test Region'.
+
+// there is a road named 'Carlton Road' that
+//   has '0.04485' as longitude and 
+//   has '51.5497' as latitude and
+//   has 'Tennyson Road' as road name and
+//   is located in the region 'Test Region'.
+
+{"service":{
+    "service_name":"tfl camera 02158",
+    "service_uri":"localhost:5002",
+    "service_inputs":[],
+    "service_outputs":[ 
+                {"output_name":"traffic_camera_image",
+                "output_data_type":"char64jpg",
+                "output_related_concepts":[
+                    {"concept_name":"road"}
+                ],
+                "output_related_instances":[
+                    {"instance_name":"Carlton Road",
+                    "instance_concepts":["road","location"],
+                    "road_name":"Carlton Road",
+                    "location_longitude":0.04485,
+                    "location_latitude":51.5497  
+                    },
+                    {"instance_name":"Romford Road",
+                    "instance_concepts":["road","location"],
+                    "road_name":"Romford Road",
+                    "location_longitude":0.0529565,
+                    "location_latitude":51.5525474  
+                    }
+                ]},
+            ],
+
+    "service_average_response_time_ms":1000
+}
+
+}

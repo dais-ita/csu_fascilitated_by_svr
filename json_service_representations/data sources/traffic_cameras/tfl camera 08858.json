@@ -1,0 +1,54 @@
+// there is a traffic camera named 'tfl Camera 08858' that
+//   has '-0.15409' as longitude and 
+//   has '51.514' as latitude and
+//   has '/Place/JamCams_00001.08858' as url and
+//   has 'JamCams_00001.08858' as id and
+//   has 'Oxford St/Orchard St' as common name and
+//   has 'https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08858.jpg' as image url and
+//   has 'https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08858.mp4' as video url.
+//  can show the location 'Oxford Street' and
+//  can show the location 'Orchard Street'.
+
+
+// there is a road named 'Oxford Street' that
+//   has '-0.1467503' as longitude and ,
+//   has '51.5149566' as latitude and
+//   has 'Oxford Street' as road name and
+//   is located in the region 'Test Region'.
+
+// there is a road named 'Orchard Street' that 
+//   has '-0.1563065' as longitude and 
+//   has '51.5146529' as latitude and
+//   has 'Orchard Street' as road name and
+//   is located in the region 'Test Region'.
+
+{"service":{
+    "service_name":"tfl camera 08858",
+    "service_uri":"localhost:5010",
+    "service_inputs":[],
+    "service_outputs":[ 
+                {"output_name":"traffic_camera_image",
+                "output_data_type":"char64jpg",
+                "output_related_concepts":[
+                    {"concept_name":"road"}
+                ],
+                "output_related_instances":[
+                    {"instance_name":"Oxford Street",
+                    "instance_concepts":["road","location"],
+                    "road_name":"Oxford Street",
+                    "location_longitude":-0.1467503,
+                    "location_latitude":51.5149566 
+                    },
+                    {"instance_name":"Orchard Street",
+                    "instance_concepts":["road","location"],
+                    "road_name":"Orchard Street",
+                    "location_longitude":-0.1563065,
+                    "location_latitude":51.5146529  
+                    }
+                ]},
+            ],
+
+    "service_average_response_time_ms":1000
+}
+
+}
