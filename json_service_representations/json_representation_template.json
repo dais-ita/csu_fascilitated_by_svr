@@ -32,7 +32,7 @@
                         "location_long":200
                         }
                     }
-                ]},
+                ]}
             ],
     "service_outputs":[ 
                 {"output_name":"output 1",

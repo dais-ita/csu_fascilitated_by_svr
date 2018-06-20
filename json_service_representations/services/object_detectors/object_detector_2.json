@@ -14,7 +14,7 @@
                 "output_related_concepts":[
                     {"concept_name":"veichle"}
                     ]
-                },
+                }
             ],
 
     "service_average_response_time_ms":5000

@@ -45,7 +45,7 @@
                     "location_longitude":0.0529565,
                     "location_latitude":51.5525474  
                     }
-                ]},
+                ]}
             ],
 
     "service_average_response_time_ms":1000
