@@ -7,10 +7,12 @@ import json
 
 import base64
 from PIL import Image
-from StringIO import StringIO
+# from StringIO import StringIO
+from io import BytesIO as StringIO
 
 
 from pi_object_detection import PiObjectDetector
+from yolo_object_detection import YoloObjectDetector
 
 app = Flask(__name__)
 
@@ -64,10 +66,15 @@ def DetectObjects():
 
 
 if __name__ == "__main__":
-    prototxt_path = "MobileNetSSD_deploy.prototxt.txt"
-    model_path = "MobileNetSSD_deploy.caffemodel"
+    # prototxt_path = "MobileNetSSD_deploy.prototxt.txt"
+    # model_path = "MobileNetSSD_deploy.caffemodel"
     
-    detector = PiObjectDetector(prototxt_path,model_path)
+    # detector = PiObjectDetector(prototxt_path,model_path)
     
+    net_config_path = "yolov3.cfg"
+    net_weights_path = "yolov3.weights"
+
+    detector = YoloObjectDetector(net_config_path,net_weights_path)
+
     print('Starting the API')
     app.run(host='0.0.0.0', port=5200)
